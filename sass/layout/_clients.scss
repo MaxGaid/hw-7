@@ -16,11 +16,7 @@
 .client-item + .client-item {
   margin-left: 30px;
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color-text);
-  color: var(--accent-color-text);
-}
+
 .clients-link {
   padding: 16px 32px;
   color: #afb1b8;
@@ -31,4 +27,9 @@
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color-text);
+    color: var(--accent-color-text);
+  }
 }

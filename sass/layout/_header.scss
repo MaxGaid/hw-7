@@ -2,7 +2,7 @@
   background: var(--background-header);
   border-bottom: 1px solid #ececec;
 }
-.header-logo {
+.header__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -11,11 +11,11 @@
   color: #000000;
   margin-right: 93px;
 }
-.header-logo > span {
+.header__logo > span {
   color: #2196f3;
 }
 
-.header-link {
+.menu-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -27,26 +27,27 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color-text);
-}
-.current {
-  color: var(--accent-color-text);
-}
-.current::after {
-  display: flex;
-  position: absolute;
-  bottom: -1.2%;
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: var(--accent-color-text);
-  border-radius: 2px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color-text);
+  }
 }
 
-.header-info {
+.current {
+  color: var(--accent-color-text);
+  &::after {
+    display: flex;
+    position: absolute;
+    bottom: -1.2%;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color-text);
+    border-radius: 2px;
+  }
+}
+
+.contact__info {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -58,10 +59,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-info:hover,
-.header-info:focus {
-  color: var(--accent-color-text);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-text);
+  }
 }
 
 .header > .container {
@@ -69,33 +70,33 @@
   align-items: center;
 }
 
-.header-list {
+.menu-list {
   display: flex;
 }
 
-.header-item {
+.menu-list__item {
   margin-left: 50px;
   position: relative;
-}
-.header-item:first-child {
-  margin-left: 0px;
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
-.header-cont {
+.contact {
   display: flex;
   margin-left: auto;
   padding-left: 0px;
   align-items: center;
 }
 
-.header-contact:first-child {
+.contact__item:first-child {
   margin-right: 50px;
 }
 
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-.contact-icon:hover {
-  fill: var(--accent-color-text);
+  &:hover {
+    fill: var(--accent-color-text);
+  }
 }
